@@ -2,27 +2,11 @@ import './style.css';
 import NavBar from '../../components/NavBar';
 import CardPost from '../../components/CardPost';
 import SearchPost from '../../components/SearchPost';
-import api from '../../api'
 import SideBar from '../../components/SideBar';
-import { useEffect } from 'react';
-import useGlobal from '../../hooks/useGlobal';
+import { useEffect , useState} from 'react';
+import posts from '../../posts';
 function Main() {
-  const {postsCard,setPostsCards} = useGlobal()
-  
-  // async function getPosts(){
-  //   const {data} = await api.get('/posts',{
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     }
-  //   });
-
-
-  //   setPostsCards([...data])
-  // }
-  
-  // useEffect(()=>{
-  //   getPosts()
-  // },[])
+  const [postsCard, setPostsCards] = useState([...posts])
 
   return (
     <div className="container">

@@ -2,7 +2,9 @@ import './style.css'
 import { useEffect, useState } from 'react';
 
 function SearchPost({setPostsCards, postsCard}){
+    
 let fullPosts = [...postsCard]
+
 function InputValueVerify(value){
     let postsFilter = []
 

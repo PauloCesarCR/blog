@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import posts from '../posts'
 function useGlobalProvider(){
-    const [postsCard, setPostsCards] = useState([...posts])
+    const [postsCard, setPostsCards] = useState([])
 
     return {
         postsCard,
