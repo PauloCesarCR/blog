@@ -9,7 +9,7 @@ function SearchPost({setPostsCards, postsCard}){
 
         if(value){
             postsFilter = postsCard.filter((post)=>{
-                return post.title.toLowerCase().includes(value)
+                return post.title.toLowerCase().includes(value.toLowerCase())
             })
             setPostsCards(postsFilter)
             return;
