@@ -12,7 +12,7 @@ function CardPost({post}){
         <div className='card-post-container'>
             <div className='card-post-infos'>
             <span onClick={openPost} className='title-card'>{post.title}</span>
-            {/* <span className='info-card'>[{post.type}] [{formatDate(post.date,'dd/MM/yyyy')}] </span> */}
+            <span className='info-card'>[{post.type}] [{post.date}] </span>
             </div>
             <p className='p-card'>{post.description}</p>
         </div>

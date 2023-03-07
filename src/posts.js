@@ -2,7 +2,7 @@ const posts = [
     {
       id: 1,
       title: 'Programar é fácil?',
-      type: 'routine',
+      type: 'programation',
       date: '07/03/2023',
       description: `Definitivamente programar não é fácil. É completamente o oposto do que dizem na internet por aí.
       "6 meses de curso e sálario acima de 5k".
