@@ -7,8 +7,9 @@ import SideBar from '../../components/SideBar';
 import voltarImg from '../../assets/voltar.png'
 import useGlobal from '../../hooks/useGlobal';
 import formatDate from '../../utility/formatDate'
+import posts from '../../posts';
 function Post(){
-    const {postsCard} = useGlobal()
+
     const navigate = useNavigate()
     const {id} = useParams()
     let postAtual = JSON.parse(localStorage.getItem('post'))
@@ -18,7 +19,7 @@ function Post(){
 
     useEffect(()=>{
 
-        let findPost = postsCard.find((post)=>{
+        let findPost = posts.find((post)=>{
             return post.id == Number(id);
         })
     
