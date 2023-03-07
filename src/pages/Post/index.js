@@ -9,25 +9,29 @@ import useGlobal from '../../hooks/useGlobal';
 import formatDate from '../../utility/formatDate'
 import posts from '../../posts';
 function Post(){
-
+    const [post,setPost] = useState([])
     const navigate = useNavigate()
     const {id} = useParams()
-    let postAtual = JSON.parse(localStorage.getItem('post'))
+
     function backtoHome(){
         navigate("/")
     }
 
-    useEffect(()=>{
-
+    function findPostAtual(){
         let findPost = posts.find((post)=>{
             return post.id == Number(id);
         })
-    
         if(!findPost){
             return;
         }
         let postJson = JSON.stringify(findPost)
         localStorage.setItem('post',postJson)
+        let postAtual = JSON.parse(localStorage.getItem('post'))
+        setPost(postAtual)
+    }
+    
+    useEffect(()=>{
+        findPostAtual()
     },[])
 
     return (
@@ -36,9 +40,9 @@ function Post(){
             <SideBar/> 
             <div className='post'>
                 <div className='post-details'>
-                    <h1 className='post-title'>{postAtual.title}</h1>
-                    <span className='post-description'>{postAtual.description}</span>
-                    <span className='post-writer'><b>Paulo César</b>, {postAtual.date}</span>
+                    <h1 className='post-title'>{post.title == "" ? "" : post.title}</h1>
+                    <span className='post-description'>{post.description == "" ? "" : post.description}</span>
+                    <span className='post-writer'><b>Paulo César</b>, {post.date == "" ? "" : post.date}</span>
 
                 </div>
             </div>
