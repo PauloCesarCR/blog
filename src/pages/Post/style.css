@@ -1,0 +1,51 @@
+.container-post {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-title {
+    font-size:46px;
+    font-style: bold;
+    color: red;
+}
+.post-type {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.post-details {
+    position: relative;
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    top: 25px;
+    align-items: center ;
+
+}
+.post-description {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+.back-img {
+    width: 50px;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+.post-titleAndType {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

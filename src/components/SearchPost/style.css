@@ -1,0 +1,15 @@
+.input-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.input-post input {
+    width: 50%;
+    height: 40px;
+}
+.input-post input::placeholder {
+   padding: 20px;
+   font-size: 16px;
+}
