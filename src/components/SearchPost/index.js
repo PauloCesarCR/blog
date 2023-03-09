@@ -21,7 +21,7 @@ function SearchPost({setPostsCards, postsCard}){
         <div className='input-post'>
             <input
                 type="text"
-                placeholder='Search for article by title'
+                placeholder='Search'
                 onChange={(e)=> InputValueVerify(e.target.value)}
             />
         </div>

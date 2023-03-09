@@ -43,7 +43,6 @@ function Post(){
                     <h1 className='post-title'>{post.title == "" ? "" : post.title}</h1>
                     <span className='post-description'>{post.description == "" ? "" : post.description}</span>
                     <span className='post-writer'><b>Paulo César</b>, {post.date == "" ? "" : post.date}</span>
-
                 </div>
             </div>
         <img className='back-img' src={voltarImg} onClick={()=> backtoHome() } />
