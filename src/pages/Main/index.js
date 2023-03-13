@@ -2,7 +2,6 @@ import './style.css';
 import NavBar from '../../components/NavBar';
 import CardPost from '../../components/CardPost';
 import SearchPost from '../../components/SearchPost';
-import SideBar from '../../components/SideBar';
 import { useEffect , useState} from 'react';
 import posts from '../../posts';
 function Main() {
@@ -15,7 +14,6 @@ function Main() {
       setPostsCards={setPostsCards}
       postsCard={postsCard}
       />
-      <SideBar/>
       <div className='cards-container'>
       {postsCard.map((post)=>(
         <CardPost

@@ -4,6 +4,7 @@ const posts = [
       title: 'Programar é fácil?',
       type: 'programation',
       date: '07/03/2023',
+      image: '',
       description:`Definitivamente programar não é fácil. É completamente o oposto do que dizem na internet por aí.
       "6 meses de curso e sálario acima de 5k".
       É o que dizem os  gurus da internet, mas como diz o Téo José quando um jogador faz algo bizarro "NÃOOO, NÃO É ASSIM".
@@ -19,6 +20,7 @@ const posts = [
       title: 'Dai a Deus o que é de Deus',
       type: 'Religious',
       date: '08/03/2023',
+      image: '',
       description: `Estava fazendo meu devocional hoje pela manhã e é incrível como Deus faz tudo de forma perfeita. 
       Em Malaquias 3:10, Deus diz "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa, e depois fazei prova de mim nisto, diz o Senhor dos Exércitos, se eu não vos abrir as janelas do céu, e não derramar sobre vós uma bênção tal até que não haja lugar suficiente para a recolherdes."
       Deus pede somente parte do ele já te deu, ele não pede o que você não tem. E diz o SENHOR dos Exércitos, derramarei chuva de bençãos sobre vós.
