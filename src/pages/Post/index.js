@@ -38,6 +38,12 @@ function Post(){
                 <div className='post-details'>
                     <h1 className='post-title'>{post.title == "" ? "" : post.title}</h1>
                     <span className='post-description'>{post.description == "" ? "" : post.description}</span>
+                    {post.image &&
+                        <>
+                        <img className='post-img' src={post.image == "" ? "" : post.image} />
+                        <span className='img-description'>{post.image_description == "" ? "" : post.image_description}</span>
+                        </>
+                    }
                     <span className='post-writer'><b>Paulo César</b>, {post.date == "" ? "" : post.date}</span>
                 </div>
             </div>

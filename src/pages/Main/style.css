@@ -6,3 +6,17 @@
     gap:30px;
     margin-top: 30px
 }
+
+.pags-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-top: 30px;
+
+}
+.pags-container ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
