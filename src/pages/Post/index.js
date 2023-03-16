@@ -16,7 +16,7 @@ function Post(){
 
     function findPostAtual(){
         let findPost = posts.find((post)=>{
-            return post.id == Number(id);
+            return post.title.replace(/\s+|\?/g, "-") == id.replace(/\s+|\?/g, "-");
         })
         if(!findPost){
             return;
@@ -24,7 +24,7 @@ function Post(){
         let postJson = JSON.stringify(findPost)
         localStorage.setItem('post',postJson)
         let postAtual = JSON.parse(localStorage.getItem('post'))
-        setPost(postAtual)
+        setPost(postAtual) 
     }
     
     useEffect(()=>{
