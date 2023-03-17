@@ -10,6 +10,7 @@ function MainRoutes() {
       <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/post/:id' element={<Post />} />
+          <Route path='*' element={<Main />} />
       </Routes>
     </GlobalProvider>
     </div>
