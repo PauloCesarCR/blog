@@ -5,7 +5,7 @@ function CardPost({post}){
     const navigate = useNavigate()
     
     function openPost(){
-        navigate(`/post/${post.title.replace(/\s+|\?/g, "-")}`)
+        navigate(`/post/${post.title.replace(/\s+|\?/g, "_")}`)
     }
     return (
         

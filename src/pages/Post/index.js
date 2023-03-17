@@ -16,7 +16,7 @@ function Post(){
 
     function findPostAtual(){
         let findPost = posts.find((post)=>{
-            return post.title.replace(/\s+|\?/g, "-") == id.replace(/\s+|\?/g, "-");
+            return post.title.replace(/\s+|\?/g, "_") == id.replace(/\s+|\?/g, "_");
         })
         if(!findPost){
             return;
