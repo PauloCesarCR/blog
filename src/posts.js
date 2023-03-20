@@ -46,6 +46,18 @@ const posts = [
       E eis o resultado:      
       `
     },
+
+    {
+      id: 4,
+      title: 'Pronunciando a palavra World em inglês',
+      type: 'Study',
+      date: '20/03/2023',
+      image:'' ,
+      image_description: '' ,
+      description: `Hoje estava estudando inglês e vi uma dica de pronúncia da palavra World em inglês, onde simplesmente nós fazemos a junção de Where + Old.  
+      Achei top a dica visto que é uma palavrinha que embola a lingua na hora de falar e  que a galera (inclusive eu) costuma ter dificuldade para pronunciar kkkk
+      `
+    },
     
   ]
   
