@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import './style.css'
-import formatDate from '../../utility/formatDate'
+import React from 'react'
+
 function CardPost({post}){
     const navigate = useNavigate()
     

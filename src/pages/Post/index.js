@@ -2,9 +2,10 @@ import './style.css'
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useEffect,useState } from 'react';
-import NavBar from '../../components/NavBar';
+import NavBar from '../../components/NavBar/index.js';
 import voltarImg from '../../assets/voltar.png'
 import posts from '../../posts';
+import React from "react";
 function Post(){
     const [post,setPost] = useState([])
     const navigate = useNavigate()
@@ -16,14 +17,14 @@ function Post(){
 
     function findPostAtual(){
         let findPost = posts.find((post)=>{
-            return post.title.replace(/\s+|\?/g, "_") == id.replace(/\s+|\?/g, "_");
+            return post.title.replace(/\s+|\?/g, "_") == id?.replace(/\s+|\?/g, "_");
         })
         if(!findPost){
             return;
         }
         let postJson = JSON.stringify(findPost)
         localStorage.setItem('post',postJson)
-        let postAtual = JSON.parse(localStorage.getItem('post'))
+        let postAtual = JSON.parse(localStorage.getItem('post') || '{}')
         setPost(postAtual) 
     }
     

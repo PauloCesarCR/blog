@@ -1,6 +1,7 @@
 import './style.css'
 import { useEffect, useState } from 'react';
 import posts from '../../posts'
+import React from "react"
 
 function SearchPost({setPostsCards, postsCard}){
 

@@ -1,11 +1,11 @@
-import Main from './pages/Main';
-import { Routes, Route, Outlet, Navigate } from 'react-router-dom';
-import Post from './pages/Post';
-import { GlobalProvider } from './contexts/GlobalContext';
+import Main from '../pages/Main/index';
+import { Routes, Route, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Post from '../pages/Post/index';
+import { GlobalProvider } from '../contexts/GlobalContext';
+import React from 'react'
 
 function MainRoutes() {
   return (
-    <div>
     <GlobalProvider>
       <Routes>
           <Route path='/' element={<Main />} />
@@ -13,9 +13,9 @@ function MainRoutes() {
           <Route path='*' element={<Main />} />
       </Routes>
     </GlobalProvider>
-    </div>
-  )
 
+  )
 }
+
 
 export default MainRoutes;

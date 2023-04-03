@@ -2,6 +2,8 @@ import './style.css'
 import logPaulo from '../../assets/logoPaulo.png'
 import linkedinImg from "../../assets/linkedin.jpg"
 import githubImg from "../../assets/github.jpg"
+import React from "react"
+
 function NavBar(){
     return(
         <div className='nav-bar-container'>

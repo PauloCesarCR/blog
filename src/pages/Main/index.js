@@ -1,14 +1,12 @@
 import './style.css';
-import NavBar from '../../components/NavBar';
-import CardPost from '../../components/CardPost';
-import SearchPost from '../../components/SearchPost';
-import { useEffect , useState} from 'react';
+import NavBar from '../../components/NavBar/index.js';
+import CardPost from '../../components/CardPost/index.js';
+import SearchPost from '../../components/SearchPost/index.js';
+import {useState} from 'react';
 import posts from '../../posts';
-import Pagination from 'react-js-pagination';
+import React from "react"
 function Main() {
   const [postsCard, setPostsCards] = useState([...posts])
-  const [statePag,setStatePag] = useState({currentPage: 1, itemsPerPage: 10})
-
  
   return (
     <div className="container">
