@@ -1,5 +1,5 @@
 import imgDinizismo from '../src/assets/dinizismo.png'
-
+import jonas from '../src/assets/jonas.png'
 const posts = [
     {
       id: 1,
@@ -56,6 +56,20 @@ const posts = [
       image_description: '' ,
       description: `Hoje estava estudando inglês e vi uma dica de pronúncia da palavra World em inglês, onde simplesmente nós fazemos a junção de Where + Old.  
       Achei top a dica visto que é uma palavrinha que embola a lingua na hora de falar e  que a galera (inclusive eu) costuma ter dificuldade para pronunciar kkkk
+      `
+    },
+
+    {
+      id: 5,
+      title: 'A minha vontade x A vontade de Deus',
+      type: 'Religious',
+      date: '17/04/2023',
+      image:jonas ,
+      image_description: `Aqui Jonas não amou. Ele simplesmente não amou o seu próximo e nem a Deus.
+      O que aprendemos sobre isso? Nós precisamos amar a Deus, amar o próximo e estar ligados a Ele para que as nossas vontades sejam a vontades Dele. como diz Paulo:
+      Assim, já não sou eu quem vive, mas Cristo vive em mim. Gálatas 2:20 `,
+      description: `Ao decorrer da história, temos varias histórias sobre como Deus interfere no nosso livre arbitrío quando é necessário.
+      Posso citar aqui diversas histórias, como a de Jonas por exemplo. Deus ordena a Jonas a viajar a Nínive para alertar o povo sobre o pecado deles e que seriam castigados caso não deixassem as más praticas de lado. Em vez disso, Jonas pegou um barco para Társis, fugindo do que Deus ordenou a ele. A história relata que uma tempestade começou e Jonas pediu para ser lançado ao mar, para que o mar se acalmasse e os tripulantes pudessem seguir viajem tranquilamente. Jonas sabia que tinha errado em sua escolha, por ódio no coração contra os Nínivitas escolheu fugir da presença de Deus e de sua vontade.  O amor de Deus pelos pecadores ninivitas fez com que ele interferisse na vontade de Jonas. Deus queria que Jonas pregasse o arrependimento ao povo de Ninive a fim de salva-los. E assim aconteceu, após a pregação de Jonas, o povo se arrependeu de seus erros e Deus removeu a sentença de morte que tinha lançado sobre eles. O ódio de Jonas  contra Nínive questiou a vontade de Deus em duas situações:
       `
     },
     
