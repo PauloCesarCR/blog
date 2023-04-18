@@ -5,6 +5,8 @@ import SearchPost from '../../components/SearchPost/index.js';
 import {useState} from 'react';
 import posts from '../../posts';
 import React from "react"
+
+
 function Main() {
   const [postsCard, setPostsCards] = useState([...posts])
  

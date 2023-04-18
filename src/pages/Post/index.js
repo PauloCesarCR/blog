@@ -8,6 +8,7 @@ import posts from '../../posts';
 import React from "react";
 function Post(){
     const [post,setPost] = useState([])
+    const [descriptionFormat,setDescriptionFormat]  = useState([])
     const navigate = useNavigate()
     const {id} = useParams()
 
@@ -26,10 +27,12 @@ function Post(){
         localStorage.setItem('post',postJson)
         let postAtual = JSON.parse(localStorage.getItem('post') || '{}')
         setPost(postAtual) 
+        setDescriptionFormat(postAtual.description.split("|"))
     }
     
     useEffect(()=>{
         findPostAtual()
+
     },[])
 
     return (
@@ -38,7 +41,9 @@ function Post(){
             <div className='post'>
                 <div className='post-details'>
                     <h1 className='post-title'>{post.title == "" ? "" : post.title}</h1>
-                    <span className='post-description'>{post.description == "" ? "" : post.description}</span>
+                    {descriptionFormat.map((description)=>
+                    <span className='post-description'>{description == "" ? "" : description}</span>
+                    )}
                     {post.image &&
                         <>
                         <img className='post-img' src={post.image == "" ? "" : post.image} />
