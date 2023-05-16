@@ -32,17 +32,7 @@
     font-size: 24px;
     text-align: center;
 }
-.back-img {
-    width: 50px;
-    cursor: pointer;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 50%;
 
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-}
 .post-titleAndType {
     display: flex;
     justify-content: space-between;
@@ -55,3 +45,4 @@
 .post-writer {
     margin-bottom: 20px;
 }
+

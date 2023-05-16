@@ -3,18 +3,15 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useEffect,useState } from 'react';
 import NavBar from '../../components/NavBar/index.js';
-import voltarImg from '../../assets/voltar.png'
 import posts from '../../posts';
 import React from "react";
+import { useLocalStorage } from 'react-use';
+
 function Post(){
     const [post,setPost] = useState([])
+    const [theme, setTheme] = useLocalStorage('theme')
     const [descriptionFormat,setDescriptionFormat]  = useState([])
-    const navigate = useNavigate()
     const {id} = useParams()
-
-    function backtoHome(){
-        navigate("/")
-    }
 
     function findPostAtual(){
         let findPost = posts.find((post)=>{
@@ -36,7 +33,7 @@ function Post(){
     },[])
 
     return (
-        <div className='container-post'>
+        <div className={`container-post`}>
             <NavBar/>
             <div className='post'>
                 <div className='post-details'>
@@ -53,7 +50,6 @@ function Post(){
                     <span className='post-writer'><b>Paulo César</b>, {post.date == "" ? "" : post.date}</span>
                 </div>
             </div>
-        <img className='back-img' src={voltarImg} onClick={()=> backtoHome() } />
         </div>
     )
 }
