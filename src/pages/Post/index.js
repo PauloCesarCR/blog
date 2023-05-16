@@ -5,11 +5,9 @@ import { useEffect,useState } from 'react';
 import NavBar from '../../components/NavBar/index.js';
 import posts from '../../posts';
 import React from "react";
-import { useLocalStorage } from 'react-use';
 
 function Post(){
     const [post,setPost] = useState([])
-    const [theme, setTheme] = useLocalStorage('theme')
     const [descriptionFormat,setDescriptionFormat]  = useState([])
     const {id} = useParams()
 
