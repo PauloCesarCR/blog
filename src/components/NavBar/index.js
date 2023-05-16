@@ -4,40 +4,48 @@ import linkedinImg from "../../assets/linkedin.jpg"
 import githubImg from "../../assets/github.jpg"
 import lua from '../../assets/lua.png'
 import sol from '../../assets/sol.png'
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useLocalStorage } from 'react-use';
 import { useNavigate } from 'react-router-dom'
+
 function NavBar(){
     const navigate = useNavigate()
     function backtoHome(){
         navigate("/")
     }
-    const [theme, setTheme] = useLocalStorage('theme', 'light');
+
+
+    const [theme, setTheme] = useLocalStorage('theme', "");
 
     function setThemeClick(){
-       if (theme == "light"){
-           setTheme("black") 
+
+       if (theme == "light" || theme == ""){
+            return setTheme("black") 
        } else {
-           setTheme("light") 
+            return setTheme("light") 
         }
-        applyTheme(theme)
     }
 
-    function applyTheme(theme){
+    function applyTheme(){
         const nav = document.querySelector(".nav-bar-container")
         const body = document.querySelector("body")
         if(theme == "black"){
-            body.style.backgroundColor = "white"
-            body.style.color = "black"
-            nav.style.borderBottom = "1px solid black"
-
-        }   else {
             body.style.backgroundColor = "black"
             body.style.color = "white"
             nav.style.borderBottom = "1px solid white"
 
+        }   else {
+            body.style.backgroundColor = "white"
+            body.style.color = "black"
+            nav.style.borderBottom = "1px solid black"
+
         }
     }
+
+    useEffect(()=>{
+        applyTheme()
+    },[theme])
+
     return(
         <div className={`nav-bar-container`}>
             <div>
