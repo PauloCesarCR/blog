@@ -1,5 +1,7 @@
-import imgDinizismo from '../src/assets/dinizismo.png'
-import jonas from '../src/assets/jonas.png'
+import imgDinizismo from '../assets/dinizismo.png'
+import jonas from '../assets/jonas.png'
+
+
 const posts = [
     {
       id: 1,
