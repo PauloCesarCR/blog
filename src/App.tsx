@@ -7,7 +7,7 @@ import { GlobalStyle } from './GlobalStyles';
 import {useLocalStorage} from 'react-use'
 
 export default function App() {
-  const [theme, setTheme] = useLocalStorage("theme", "light")
+  const [theme, setTheme] = useLocalStorage<String>("theme", "light")
   
   function toggle() : String{
     if(theme == "light"){

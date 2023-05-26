@@ -10,10 +10,10 @@ import NavBar from '../../components/NavBar';
 
 export default function OnePost({toggle, theme} : any){
     const [post,setPost] = useState<Post>()
-    const [descriptionFormat,setDescriptionFormat]  = useState([])
+    const [descriptionFormat,setDescriptionFormat]  = useState<Array<String>>([])
     const {id} = useParams()
 
-    function findPostAtual(){
+    function findPostAtual() : void {
         let findPost = posts.find((post)=>{
             return post.title.replace(/\s+|\?/g, "_") == id?.replace(/\s+|\?/g, "_");
         })

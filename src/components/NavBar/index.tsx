@@ -3,6 +3,7 @@ import logoPaulo from '../../assets/logoPaulo.png'
 import linkedinImg from "../../assets/linkedin.jpg"
 import githubImg from "../../assets/github.jpg"
 import { useNavigate } from 'react-router-dom'
+
 function NavBar(){
     const navigate = useNavigate()
     function backToHome() : void{

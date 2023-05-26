@@ -6,7 +6,6 @@ function SearchPost({setPostsCards, postsCard}: any){
 
     function InputValueVerify(value: String){
         let postsFilter = []
-        console.log(postsCard)
         if(value){
             postsFilter = postsCard.filter((post : Post)=>{
                 return post.title.toLowerCase().includes(value.toLowerCase())
