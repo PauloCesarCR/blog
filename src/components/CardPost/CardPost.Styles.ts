@@ -3,14 +3,17 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
     width: 70%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid ${props => props.theme};
     padding: 12px;
-    margin: 0 auto;
+    margin: 10px auto;
+    border-radius: 10px;
+
 `
 export const CardPostInfo = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 `
 
 export const TitleCard = styled.span`
@@ -24,9 +27,13 @@ export const TitleCard = styled.span`
     }
 `
 
-export const infoCard = styled.span`
-    font-size: 22px;
+export const infoCard = styled.div`
+    font-size: 18px;
     text-transform: capitalize;
+    background-color: red;
+    color: white;
+    padding: 6px;
+    border-radius: 12px;
 `
 
 export const descriptionCard = styled.p`

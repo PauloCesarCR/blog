@@ -4,16 +4,12 @@ import NavBar from '../../components/NavBar'
 import SearchPost from '../../components/SearchPost'
 import CardPost from '../../components/CardPost'
 import posts from '../../Banco de Dados/PostsDoBlog'
-import { ToogleTheme } from '../../App.Styles' 
-import lua from '../../assets/lua.png'
-import sol from '../../assets/sol.png'
 import Post from '../../types/Post2'
 
-function Home({toggle, theme} : any) {
+function Home() {
   const [postsCard, setPostsCards] = useState<Post[]>([...posts])
   return (
     <C.Container>
-        <ToogleTheme onClick={toggle} src={theme == "black" ? sol : lua}/>
       <NavBar />
       <SearchPost 
       setPostsCards={setPostsCards}

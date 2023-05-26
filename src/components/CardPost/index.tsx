@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom'
 import CardPostProps from '../../types/Post'
 import * as Card from './CardPost.Styles'
 
-
 function CardPost({ post }: CardPostProps){
     const navigate = useNavigate()
 

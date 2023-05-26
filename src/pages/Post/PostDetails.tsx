@@ -3,12 +3,9 @@ import posts from '../../Banco de Dados/PostsDoBlog';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Post from '../../types/Post2';
-import { ToogleTheme } from '../../App.Styles' 
-import lua from '../../assets/lua.png'
-import sol from '../../assets/sol.png'
 import NavBar from '../../components/NavBar';
 
-export default function OnePost({toggle, theme} : any){
+export default function OnePost(){
     const [post,setPost] = useState<Post>()
     const [descriptionFormat,setDescriptionFormat]  = useState<Array<String>>([])
     const {id} = useParams()
@@ -34,7 +31,6 @@ export default function OnePost({toggle, theme} : any){
     return (
         <PostStyles.PostContainer>
             <NavBar />
-            <ToogleTheme onClick={toggle} src={theme == "black" ? sol : lua} />
             <PostStyles.Post>
                 <PostStyles.PostDetails>
                     <PostStyles.PostTitle>{post?.title}</PostStyles.PostTitle>

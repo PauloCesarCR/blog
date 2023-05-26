@@ -4,27 +4,17 @@ import OnePost from './pages/Post/PostDetails';
 import { ThemeProvider } from 'styled-components';
 import { LigthTheme, DarkTheme } from './theme';
 import { GlobalStyle } from './GlobalStyles';
-import {useLocalStorage} from 'react-use'
-
+import useGlobal from './hooks/useGlobal';
 export default function App() {
-  const [theme, setTheme] = useLocalStorage<String>("theme", "light")
-  
-  function toggle() : String{
-    if(theme == "light"){
-      setTheme("black")
-      return "black"
-    } 
-    setTheme("light")
-    return "light"
-  }
+  const {themeGlobal}: any = useGlobal()
 
   return (
-    <ThemeProvider theme={theme == "light" ? LigthTheme : DarkTheme}>
+    <ThemeProvider theme={themeGlobal == "light" ? LigthTheme : DarkTheme}>
       <GlobalStyle/>
       <Router>
           <Routes>
-            <Route path="/" element={<Home toggle={toggle} theme={theme} />} />
-            <Route path="/post/:id" element={<OnePost toggle={toggle} theme={theme} />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/post/:id" element={<OnePost />} />
           </Routes>
       </Router>
       </ThemeProvider>
