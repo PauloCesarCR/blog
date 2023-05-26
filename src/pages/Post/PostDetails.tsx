@@ -39,7 +39,7 @@ export default function OnePost({toggle, theme} : any){
                 <PostStyles.PostDetails>
                     <PostStyles.PostTitle>{post?.title}</PostStyles.PostTitle>
                     {descriptionFormat.map((description)=>(
-                        <PostStyles.PostDescription key={description}>{description ? description : ""}</PostStyles.PostDescription>
+                        <PostStyles.PostDescription>{description ? description : ""}</PostStyles.PostDescription>
                     ))}
                     
                     {/* esses dois só vai se existir o post.image, thanks */}
