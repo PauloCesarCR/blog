@@ -16,12 +16,11 @@ function Home({toggle, theme} : any) {
         <ToogleTheme onClick={toggle} src={theme == "black" ? sol : lua}/>
       <NavBar />
       <SearchPost 
-      postsCard= {postsCard}
       setPostsCards={setPostsCards}
       />
       {postsCard.map((post)=>(
         <CardPost
-         key={post.id}
+         key={post.title}
          post={post}
         />
       ))}
