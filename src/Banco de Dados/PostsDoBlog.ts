@@ -73,6 +73,22 @@ const posts = [
       Posso citar aqui diversas histórias, como a de Jonas por exemplo. Deus ordena a Jonas a viajar a Nínive para alertar o povo sobre o pecado deles e que seriam castigados caso não deixassem as más praticas de lado. Em vez disso, Jonas pegou um barco para Társis, fugindo do que Deus ordenou a ele. | A história relata que uma tempestade começou e Jonas pediu para ser lançado ao mar, para que o mar se acalmasse e os tripulantes pudessem seguir viajem tranquilamente, o mar se acalmou e Deus enviou um grande peixe para engolir Jonas. Jonas sabia que tinha errado em sua escolha, por ódio no coração contra os Nínivitas escolheu fugir da presença de Deus e de sua vontade.  O amor de Deus pelos pecadores ninivitas fez com que ele interferisse na vontade de Jonas. Deus queria que Jonas pregasse o arrependimento ao povo de Ninive a fim de salva-los. E assim aconteceu, após clamar ao Senhor do fundo do oceano e ser devolvido a Terra pelo grande peixe, Jonas foi a Nínive e pregou, o povo se arrependeu de seus erros e Deus removeu a sentença de morte que tinha lançado sobre eles. | O ódio de Jonas contra Nínive questionou a vontade de Deus em duas situações:
       `
     },
+
+    {
+      id: 6,
+      title: 'Transpose do Blog para Typescript + Styled Components',
+      type: 'Programation',
+      date: '26/05/2023',
+      image:'' ,
+      image_description: ``,
+      description: `É incrível como o Typescript deixa tudo mais limpo e organizado, ainda estou estudando alguns types para me livrar o bendito "Any", mas já da pra notar que tudo fica mais claro e limpo. | 
+      Sobre o Styled-Components, eu sempre vejo nos requisitos das vagas e resolvi dá uma olhada e que mão na roda em. Trabalhar com componentes que podem ser estilizados através de Props é extremamente sensacional e ainda deixa o código bem mais coeso. | 
+      Eu passei algum tempo ( 1 hora ) para implementar o Toogle Theme com o styled-components e foi aí que descobri o ThemeProvider da própria lib, outra mão na roda. |
+      Eu tenho um ThemeProvider envolvendo as minhas rotas no App.tsx, um GlobalStyle e foi só passar a função Toogle para as duas rotas e gg, lá eu troco o theme. Ficou um código meio duplicado, ainda estou vendo um jeito de resolver isso, mas tá funcionando. |
+      Aqui tem tudo que você precisa para estudar Styled-Components : |  
+      https://styled-components.com/docs
+      `
+    },
     
   ]
   
