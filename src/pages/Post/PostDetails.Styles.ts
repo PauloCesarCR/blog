@@ -14,7 +14,7 @@ align-items: center;
 `
 export const PostDetails = styled.div`
 position: relative;
-width: 1300px;
+width: 80%;
 display: flex;
 flex-direction: column;
 top: 25px;
@@ -25,13 +25,15 @@ export const PostTitle = styled.h1`
 font-size:46px;
 font-style: bold;
 color: red;
+text-align: center;
 `
 export const PostDescription = styled.p`
 font-size: 24px;
 text-align: center;
+padding: 0px 10px;
 `
 export const PostImage = styled.img`
-max-width: 100%;
+max-width: 90%;
 `
 export const ImageDescription = styled(PostDescription)``
 
