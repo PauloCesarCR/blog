@@ -20,7 +20,7 @@ export const ToogleTheme = styled.img`
     top: 10px;
 
     &:hover {
-        opacity : 0.5;
+        opacity : 0.75;
         cursor: pointer;
     }
 `

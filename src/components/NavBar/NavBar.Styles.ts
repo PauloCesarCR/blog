@@ -15,7 +15,7 @@ export const ImgDiv = styled.div`
 export const Image = styled.img`
     width: 50px;
     &:hover{
-        opacity: 0.5;
+        filter: brightness(150%);
         cursor: pointer;
     }
 `
