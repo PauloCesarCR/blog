@@ -1,7 +1,7 @@
 import {useState} from 'react'
-
+import useLocalStorage from 'react-use/lib/useLocalStorage'
 function useGlobalProvider(){
-    const [themeGlobal, setThemeGlobal] = useState("light")
+    const [themeGlobal, setThemeGlobal] = useLocalStorage("theme", "light")
 
     function toggle() : String{
         if(themeGlobal == "light"){
