@@ -6,8 +6,10 @@ import CardPost from '../../components/CardPost'
 import posts from '../../Banco de Dados/PostsDoBlog'
 import Post from '../../types/Post2'
 
+
 function Home() {
   const [postsCard, setPostsCards] = useState<Post[]>([...posts])
+
   return (
     <C.Container>
       <NavBar />
