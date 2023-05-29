@@ -20,7 +20,7 @@ function NavBar(){
         <NavBarStyles.NavBarContainer >
                  <ToogleTheme onClick={toggle} src={themeGlobal == "black" ? sol : lua}/>
             <NavBarStyles.ImgDiv>
-                <NavBarStyles.Image src={logoPaulo} onClick={backToHome}/>
+                <NavBarStyles.Image loading='lazy' src={logoPaulo} onClick={backToHome}/>
             </NavBarStyles.ImgDiv>
             <NavBarStyles.IconsDiv>
                 <NavBarStyles.Link target="_blank" href="https://www.linkedin.com/in/paulocesaras">

@@ -39,7 +39,7 @@ export default function OnePost(){
                     ))}
                     
                     {/* esses dois só vai se existir o post.image, thanks */}
-                    <PostStyles.PostImage src={post?.image} />
+                    <PostStyles.PostImage loading='lazy'  src={post?.image} />
                     <PostStyles.ImageDescription>{post?.image_description}</PostStyles.ImageDescription>
 
                     <PostStyles.PostWriter><em> Paulo César - </em> {post?.date}</PostStyles.PostWriter>
