@@ -1,5 +1,6 @@
-import {useState} from 'react'
 import useLocalStorage from 'react-use/lib/useLocalStorage'
+
+
 function useGlobalProvider(){
     const [themeGlobal, setThemeGlobal] = useLocalStorage("theme", "light")
 

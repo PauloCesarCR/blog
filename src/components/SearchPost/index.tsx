@@ -4,7 +4,7 @@ import * as SearchStyle from './SearchPost.Styles'
 import useGlobal from '../../hooks/useGlobal';
 
 function SearchPost({setPostsCards}: any){
-    const {themeGlobal} = useGlobal()
+    const {themeGlobal} : any = useGlobal()
 
     function InputValueVerify(value: String){
         let postsFilter = []
