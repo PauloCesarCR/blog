@@ -12,7 +12,7 @@ export const InputSearch = styled.input<{themeSearch: string;}>`
     width: 50%;
     height: 40px;
     padding: 5px;
-    background-color: ${props => props.themeSearch};
+    background-color: transparent;
     border-radius: 5px;
     color:  ${props => props.themeSearch == "white" ? "black" : "white"};
 `
