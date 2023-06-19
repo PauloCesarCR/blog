@@ -1,8 +1,8 @@
 import * as NavBarStyles from './NavBar.Styles'
 import logoPaulo from '../../assets/logoPaulo.png'
-import linkedinBlackImg from '../../assets/linkedinBlack.jpg'
+import linkedinBlackImg from '../../assets/linkedinBlack.png'
 import linkedinWhiteImg from '../../assets/linkedinWhite.png'
-import githubBlackImg from "../../assets/githubblack.jpg"
+import githubBlackImg from "../../assets/githubblack.png"
 import githubWhiteImg from '../../assets/githubWhite.png'
 import { useNavigate } from 'react-router-dom'
 import { ToogleTheme } from '../../App.Styles'
