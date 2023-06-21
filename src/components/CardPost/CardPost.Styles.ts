@@ -21,7 +21,7 @@ export const CardPostInfo = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 720px) {
+    @media (max-width: 1030px) {
         display: flex; 
         flex-direction: column;
         gap: 10px;
@@ -38,6 +38,9 @@ export const TitleCard = styled.span`
         cursor: pointer;
         color: black;
     }
+    @media (max-width: 1030px) {
+        text-align: center;
+      }
 
 
 `
@@ -50,7 +53,7 @@ export const infoCard = styled.div`
     padding: 6px;
     border-radius: 12px;
 
-    @media (max-width: 720px) {
+    @media (max-width: 1030px) {
         font-size: 15px;    
     }
 
