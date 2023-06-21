@@ -7,7 +7,7 @@ interface Props {
     }
 }
 export const GlobalStyle = createGlobalStyle<Props>`
-    body {
+    body * {
         background-color: ${props => props.theme.body};
         transition: background-color 2s ease; 
         color: ${props => props.theme.fontColor}

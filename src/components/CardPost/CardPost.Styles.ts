@@ -3,16 +3,29 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
     width: 70%;
-    border-bottom: 1px solid ${props => props.theme};
     padding: 12px;
     margin: 10px auto;
     border-radius: 10px;
+
+    @media (max-width: 720px) {
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    border-bottom: 1px solid black;
 
 `
 export const CardPostInfo = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 720px) {
+        display: flex; 
+        flex-direction: column;
+        gap: 10px;
+      }
     
 `
 
@@ -25,6 +38,8 @@ export const TitleCard = styled.span`
         cursor: pointer;
         color: black;
     }
+
+
 `
 
 export const infoCard = styled.div`
@@ -34,6 +49,13 @@ export const infoCard = styled.div`
     color: white;
     padding: 6px;
     border-radius: 12px;
+
+    @media (max-width: 720px) {
+        font-size: 15px;    
+    }
+
+
+
 `
 
 export const descriptionCard = styled.p`
