@@ -8,7 +8,7 @@ const posts = [
     id: 1,
     title: 'Programar é fácil?',
     type: 'programation',
-    date: '07/03/2023',
+    date: '2023/03/07',
     image: '',
     image_description: '',
     description: `Definitivamente programar não é fácil. É completamente o oposto do que dizem na internet por aí.
@@ -25,7 +25,7 @@ const posts = [
     id: 2,
     title: 'Dai a Deus o que é de Deus',
     type: 'Religious',
-    date: '08/03/2023',
+    date: '2023/03/08',
     image: '',
     image_description: '',
     description: `Estava fazendo meu devocional hoje pela manhã e é incrível como Deus faz tudo de forma perfeita. | 
@@ -39,7 +39,7 @@ const posts = [
     id: 3,
     title: 'Dinizismo no Fifa?',
     type: 'Gaming',
-    date: '13/03/2023',
+    date: '2023/03/13',
     image: imgDinizismo,
     image_description: `Aproximação em apenas um setor do campo de ataque (toqueira) e a chegada do Walker pelo lado direito, o que deixa meu time extremamente exposto a contra-ataques, por isso é de extrema importância a manutenção da posse de bola para vencer :)
      a escolha pelo city foi pela característica do jogadores que são de toque e mobilidade.`,
@@ -53,7 +53,7 @@ const posts = [
     id: 4,
     title: 'Pronunciando a palavra World em inglês',
     type: 'Study',
-    date: '20/03/2023',
+    date: '2023/03/20',
     image: '',
     image_description: '',
     description: `Hoje estava estudando inglês e vi uma dica de pronúncia da palavra World em inglês, onde simplesmente nós fazemos a junção de Where + Old.  
@@ -65,7 +65,7 @@ const posts = [
     id: 5,
     title: 'A minha vontade x A vontade de Deus',
     type: 'Religious',
-    date: '17/04/2023',
+    date: '2023/04/17',
     image: jonas,
     image_description: `Aqui Jonas não amou. Ele simplesmente não amou o seu próximo e nem a Deus. 
       O que aprendemos sobre isso? Nós precisamos amar a Deus, amar o próximo e estar ligados a Ele para que as nossas vontades sejam a vontades Dele. como diz Paulo:
@@ -79,7 +79,7 @@ const posts = [
     id: 6,
     title: 'Transpose do Blog para Typescript + Styled Components',
     type: 'Programation',
-    date: '26/05/2023',
+    date: '2023/05/26',
     image: '',
     image_description: ``,
     description: `É incrível como o Typescript deixa tudo mais limpo e organizado, ainda estou estudando alguns types para me livrar o bendito "Any", mas já da pra notar que tudo fica mais claro e limpo. | 
@@ -94,7 +94,7 @@ const posts = [
     id: 7,
     title: 'Verificar se uma string é rotativa em JS',
     type: 'Programation',
-    date: '18/08/2023',
+    date: '2023/08/18',
     image: rotative,
     image_description: ``,
     description: `Exemplo bem simples para verificar se as strings são rotativas ou não.`

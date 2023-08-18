@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import * as C from './App.Styles'
 import NavBar from '../../components/NavBar'
 import SearchPost from '../../components/SearchPost'
@@ -14,8 +14,11 @@ function Home() {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = postsCard.slice(indexOfFirstItem, indexOfLastItem);
-  
-  
+
+  useEffect(() => {
+    postsCard.some((post) => new Date(post.date).toDateString() == new Date().toDateString()) ? document.title = "NEW POST TODAY" : "Blog do Paulo";
+  }, []);
+
   function paginate(pageNumber : any) : void{
     setCurrentPage(pageNumber)
   }
