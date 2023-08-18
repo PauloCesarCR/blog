@@ -10,20 +10,16 @@ import Pagination from '../../components/Pagination/Pagination'
 function Home() {
   const [postsCard, setPostsCards] = useState<Post[]>([...posts])
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(5); // Quantidade de itens por página
-
-
+  const [itemsPerPage] = useState(5);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = postsCard.sort(function(a,b) {
-  return new Date(a.date) > new Date(b.date) ? 1 : -1;
-  }).slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = postsCard.slice(indexOfFirstItem, indexOfLastItem);
   
   
   function paginate(pageNumber : any) : void{
     setCurrentPage(pageNumber)
   }
-  
+
   return (
     <C.Container>
       <NavBar />
