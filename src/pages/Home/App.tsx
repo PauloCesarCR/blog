@@ -18,10 +18,12 @@ function Home() {
   const currentItems = postsCard.sort(function(a,b) {
   return new Date(a.date) > new Date(b.date) ? 1 : -1;
   }).slice(indexOfFirstItem, indexOfLastItem);
-
+  
+  
   function paginate(pageNumber : any) : void{
     setCurrentPage(pageNumber)
   }
+  
   return (
     <C.Container>
       <NavBar />
