@@ -15,8 +15,9 @@ function Home() {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = postsCard.slice(indexOfFirstItem, indexOfLastItem);
-
+  const currentItems = postsCard.sort(function(a,b) {
+  return new Date(a.date) > new Date(b.date) ? 1 : -1;
+  }).slice(indexOfFirstItem, indexOfLastItem);
 
   function paginate(pageNumber : any) : void{
     setCurrentPage(pageNumber)

@@ -97,7 +97,7 @@ const posts = [
     date: '18/08/2023',
     image: rotative,
     image_description: ``,
-    description: ``
+    description: `Exemplo bem simples para verificar se as strings são rotativas ou não.`
   },
 
 ]
