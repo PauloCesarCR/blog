@@ -4,7 +4,7 @@ export const PostContainer = styled.div`
 height: 100vh;
 
 `
-export const Post= styled.div`
+export const Post = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -20,7 +20,7 @@ align-items: center ;
 gap: 20px;
 `
 export const PostTitle = styled.h1`
-font-size:46px;
+font-size: clamp(2rem, 2.5rem, 3.5rem);
 font-style: bold;
 color: red;
 text-align: center;

@@ -31,7 +31,7 @@ export const CardPostInfo = styled.div`
 
 export const TitleCard = styled.span`
     color: red; 
-    font-size: 32px;  
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);  
     text-shadow: 1px 2px 0px rgba(230,211,191,0.39);
 
     &:hover {
