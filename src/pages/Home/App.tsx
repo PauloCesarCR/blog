@@ -13,15 +13,16 @@ function Home() {
   const [itemsPerPage] = useState(5);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = postsCard.slice(indexOfFirstItem, indexOfLastItem);
-
+  const currentItems = postsCard.sort((a, b) => new Date(b.date).getTime() -  new Date(a.date).getTime()).slice(indexOfFirstItem, indexOfLastItem);
+  
   useEffect(() => {
     postsCard.some((post) => new Date(post.date).toDateString() == new Date().toDateString()) ? document.title = "NEW POST TODAY" : "Blog do Paulo";
   }, []);
 
-  function paginate(pageNumber : any) : void{
+  function paginate(pageNumber: number) : void{
     setCurrentPage(pageNumber)
   }
+
 
   return (
     <C.Container>
